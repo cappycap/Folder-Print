@@ -42,10 +42,9 @@ namespace DriveQuickstart
                     "user",
                     CancellationToken.None,
                     new FileDataStore(credPath, true)).Result;
-                Console.WriteLine("Credential file saved to: " + credPath);
+                form1.listView1.Items.Add("Credential file saved to: " + credPath);
             }
 
-            Console.WriteLine("Please enter a folder link:");
             string folderLink = Console.ReadLine();
 
             string[] folderTemp = folderLink.Split("/");
@@ -67,17 +66,17 @@ namespace DriveQuickstart
             // List files.
             IList<Google.Apis.Drive.v3.Data.File> files = listRequest.Execute()
                 .Files;
-            Console.WriteLine("Files:");
+            form1.listView1.Items.Add("Files:");
             if (files != null && files.Count > 0)
             {
                 foreach (var file in files)
                 {
-                    Console.WriteLine("{0} ({1})", file.Name, file.Id);
+                    form1.listView1.Items.Add("{0} ({1})", file.Name, file.Id);
                 }
             }
             else
             {
-                Console.WriteLine("No files found.");
+                form1.listView1.Items.Add("No files found.");
             }
             Console.Read();
 

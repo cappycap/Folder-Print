@@ -18,6 +18,7 @@ namespace Folder_Print
         private void button1_Click(object sender, EventArgs e)
         {
             // Set retrieval link.
+            string u = Form1.textBox1.Text;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -62,7 +63,7 @@ namespace Folder_Print
 
         private void button2_Click(object sender, EventArgs e)
         {
-            // Set upload link, verify 
+            // Set upload link, verify
         }
 
         private void label7_Click(object sender, EventArgs e)
