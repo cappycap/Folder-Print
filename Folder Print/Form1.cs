@@ -32,7 +32,7 @@ namespace Folder_Print
 
         public void Access(UserCredential credential, string sourceFolder, string printer, string destinationFolder, Form1 form1)
         {
-            string folderLink = Console.ReadLine();
+            string folderLink = sourceFolder;
 
             string[] folderTemp = folderLink.Split("/");
             string[] folderElements = folderTemp[5].Split("?");
