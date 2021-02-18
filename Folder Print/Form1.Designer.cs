@@ -6,7 +6,7 @@ namespace Folder_Print
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        public System.ComponentModel.IContainer components = null;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -27,7 +27,7 @@ namespace Folder_Print
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
+        public void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -73,6 +73,7 @@ namespace Folder_Print
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(362, 23);
             this.textBox1.TabIndex = 2;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
@@ -80,6 +81,7 @@ namespace Folder_Print
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(362, 23);
             this.textBox2.TabIndex = 5;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label2
             // 
@@ -113,7 +115,7 @@ namespace Folder_Print
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(30, 364);
+            this.label3.Location = new System.Drawing.Point(33, 339);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(76, 15);
             this.label3.TabIndex = 7;
@@ -148,6 +150,8 @@ namespace Folder_Print
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(76, 23);
             this.textBox3.TabIndex = 10;
+            this.textBox3.Text = "30";
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // button3
             // 
@@ -221,6 +225,7 @@ namespace Folder_Print
             this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -228,21 +233,21 @@ namespace Folder_Print
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox comboBox1;
+        public System.Windows.Forms.Button button1;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.TextBox textBox1;
+        public System.Windows.Forms.TextBox textBox2;
+        public System.Windows.Forms.Label label2;
+        public System.Windows.Forms.Button button2;
+        public System.Windows.Forms.ListView listView1;
+        public System.Windows.Forms.Label label3;
+        public System.Windows.Forms.Label label4;
+        public System.Windows.Forms.Label label5;
+        public System.Windows.Forms.TextBox textBox3;
+        public System.Windows.Forms.Button button3;
+        public System.Windows.Forms.Label label6;
+        public System.Windows.Forms.LinkLabel linkLabel1;
+        public System.Windows.Forms.Label label7;
+        public System.Windows.Forms.ComboBox comboBox1;
     }
 }
